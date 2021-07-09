@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rgSoft.glucosacontrol"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="rgSoft.glucosacontrol.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="Reg_Medico_Activity" android:name="Reg_Medico_Activity"></activity>
+        <activity android:label="Reg_Paciente_Activity" android:name="Reg_Paciente_Activity"></activity>
+        <activity android:label="login_activity" android:name="login_activity"></activity>
+        <activity android:name="Main_Menu_Activity" android:label="Main_Menu_Activity"></activity>
+        <activity android:label="Control_Activity" android:name="Control_Activity"></activity>
+        <activity android:name="Graphics_Activity" android:label="Graphics_Activity"></activity>
+        <activity android:label="ShowControlsActivity" android:name="ShowControlsActivity"></activity>
+        <activity android:name="MultitouchAndroidplotActivity" android:label="MultitouchAndroidplotActivity"></activity>
+    </application>
+
+</manifest>
